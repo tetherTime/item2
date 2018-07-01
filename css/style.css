@@ -64,7 +64,7 @@ nav.collapsible a {
 	font-size: 1.4em;
 	text-decoration: none;
 
-	color: #000;
+	color: #9c27b0;
 }
 
 
@@ -93,7 +93,8 @@ nav.collapsible {
 	color: #000;
 	padding: 10px 25px;
 	width: 100%;
-	border: none;
+    border: none;
+    border-top: 6px solid #9A30AE;
 	text-align: left;
 	outline: none;
     box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
@@ -160,7 +161,7 @@ div.container div.colo-1 {
 /* Column items (rows) */
 
 div.container div.column-container .item {
-	margin-bottom: 35px;
+	margin-bottom: 60px;
 }
 
 div.container div.column-container img {
@@ -175,6 +176,7 @@ div.container div.column-container div.item div.item-card {
 	color: #716f6f;
 	font-family: 'Bitter', serif;
     box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.05);
+
 	
 }
 
