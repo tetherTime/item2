@@ -1,9 +1,22 @@
 * {
-	padding: 0;
-	margin: 0;
+	padding: 0px;
+	margin: 0px;
 	box-sizing: border-box;
-	font-size: 15px;
 	font-weight: 200;
+	line-height: 25px;
+}
+
+body {
+	background-color: #F7F7F7;
+}
+
+.title {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #9c27b0;
+    text-align: center;
 }
 
 /* TOGGLER */
@@ -53,9 +66,7 @@ nav.collapsible a {
 
 	color: #000;
 }
-nav.collapsible a:hover {
-	color: rgba(255, 249, 249, 0.35);
-}
+
 
 nav.collapsible p {
 	font-size: 1.4em;
@@ -66,7 +77,12 @@ nav.collapsible ul li.nav-item {
 	list-style-type: none;
     font-size: 14px;
     letter-spacing: 3px;
-    border-bottom: solid 1px rgba(255, 254, 254, 0.12);
+    transition: background-color 1s;
+    border-radius: 5px;
+}
+
+nav.collapsible ul li.nav-item:hover {
+    background-color: hsla(0, 0%, 0%, 0.23);
 }
 nav.collapsible {
 	display: flex;
@@ -80,7 +96,6 @@ nav.collapsible {
 	border: none;
 	text-align: left;
 	outline: none;
-	margin-bottom: 50px;
     box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
 }
 
@@ -91,6 +106,7 @@ nav.collapsible ul li {
 
 /* Style the collapsible content. Note: hidden by default */
 nav.collapsible .content {
+	z-index: 2000;
 	position: absolute;
 	width: 100%;
 	padding: 0 18px;
@@ -106,17 +122,108 @@ nav.collapsible .content {
 	transition: max-height 0.2s ease-out;
 
 }
+ /* MAIN IMAGE */
 
-footer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 150px;
+div.main {
+	position: absolute;
+	z-index: 0;
+	position: relative;
 	width: 100%;
-	background-color: rgb(52, 58, 64);
-	margin-top: 30px;
-	text-align: center;
-	color: white;
+	overflow: hidden;
+	margin-bottom: 100px;
+}
+
+div.main img.main-image {
+
+	width: 100%;
+}
+
+/* COLUMN CONTENT */
+div.container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+	padding: 0px 60px;
+}
+
+div.container div.colo-3 {
+	flex: 2.4;
+	padding: 0px 10px;
+	margin: 0px 20px;
+}
+
+div.container div.colo-1 {
+	flex: 1;
+}
+
+/* Column items (rows) */
+
+div.container div.column-container .item {
+	margin-bottom: 35px;
+}
+
+div.container div.column-container img {
+	width: 100%;
+	display: block;
+}
+
+div.container div.column-container div.item div.item-card {
+	width: 100%;
+	padding: 20px 20px;
+	background-color: #fff;
+	color: #716f6f;
+	font-family: 'Bitter', serif;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.05);
+	
+}
+
+div.container div.column-container div.item div p {
+	font-size: 15px;
+	margin-bottom: 30px;
+}
+
+div.container div.column-container div.item h1 {
+	margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #9c27b0;
+}
+
+/* forms */
+
+div.container div.column-container form div.form-group {
+	max-width: 100%;
+	display: flex;
+	margin: 20px 0	;
+
+}
+
+div.container div.column-container form input[type=text], textarea {
+	flex: 3;
+	height: 45px;
+	border-radius: 5px;
+	border: #b9b9b9 1px solid;
+	padding-left: 10px;
+    font-size: 13px;
+    font-weight: 500;
+
+}
+
+div.container div.column-container form textarea {
+	height: 100px;
+}
+
+div.container div.column-container form button {
+    flex: 1;
+    font-size: 17px;
+    font-weight: 500;
+	height: 45px;
+    cursor: pointer;
+    color: #fff;
+	border: none;
+    background-color: #9c27b0;
+    border-radius: 10px;
 }
 
 /* DESKTOP */
@@ -154,5 +261,7 @@ footer {
 	nav.collapsible div.toggler {
 		display: none;
 	}
+
+
 
 }

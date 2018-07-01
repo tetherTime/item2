@@ -4,7 +4,6 @@ var collapsEl;
 window.onload = function() {
     collapsEl = document.getElementsByClassName("toggler");
     var length = collapsEl.length;
-    console.log(collapsEl);
     for (var i = 0; i < length; i++) {
         collapsEl[i].addEventListener("click", function() {
             animateToggle();
