@@ -170,6 +170,7 @@ div.container div.column-container img {
 }
 
 div.container div.column-container div.item div.item-card {
+	position: relative;
 	width: 100%;
 	padding: 20px 20px;
 	background-color: #fff;
@@ -185,6 +186,21 @@ div.container div.column-container div.item div p {
 	margin-bottom: 30px;
 }
 
+div.container div.column-container div.item p.email {
+	font-size: 20px;
+	margin-bottom: 30px;
+	color: #716f6f;
+	font-family: 'Bitter', serif;
+	text-align: center;
+}
+
+div.container div.column-container div.item div p.email {
+	font-size: 15px;
+	margin-bottom: 30px;
+	color: #716f6f;
+	font-family: 'Bitter', serif;
+}
+
 div.container div.column-container div.item h1 {
 	margin-bottom: 15px;
     font-size: 25px;
@@ -197,7 +213,7 @@ div.container div.column-container div.item h1 {
 div.container div.column-container form div.form-group {
 	max-width: 100%;
 	display: flex;
-	margin: 20px 0	;
+	margin: 20px 0;
 
 }
 
@@ -209,7 +225,8 @@ div.container div.column-container form input[type=text], textarea {
 	padding-left: 10px;
     font-size: 13px;
     font-weight: 500;
-
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 div.container div.column-container form textarea {
@@ -226,8 +243,44 @@ div.container div.column-container form button {
 	border: none;
     background-color: #9c27b0;
     border-radius: 10px;
+    transition: background-color 1s;
 }
 
+div.container div.column-container form button:hover {
+	background-color: #6f1d7d;
+}
+
+div.container div.column-container div.item div.item-card div.div-footnote {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 50px;
+    width: 100%;
+}
+
+div.container div.column-container div.item div.item-card div.div-footnote img {
+	position: absolute;
+	right: 40px;
+	top: 5px;
+	width: 35px;
+}
+
+div.container div.column-container div.item div.item-card div.div-footnote p {
+	position: absolute;
+	right: 0px;
+	top: 5px;
+	width: 35px;
+}
+
+footer {
+	height: 500px;
+	width: 100%;
+	background-color: #9c27b0;
+}
+
+footer p.title {
+	color: white;
+}
 /* DESKTOP */
 @media only screen and (min-width: 769px) {
 
@@ -263,7 +316,4 @@ div.container div.column-container form button {
 	nav.collapsible div.toggler {
 		display: none;
 	}
-
-
-
 }
