@@ -272,6 +272,21 @@ div.container div.column-container div.item div.item-card div.div-footnote p {
 	width: 35px;
 }
 
+/* one column */
+@media screen and (max-width: 768px) {
+
+	div.container div.colo-3 {
+		flex: 100%;
+		padding: 0px 10px;
+		margin: 0px 20px;
+	}
+
+	div.container div.colo-1 {
+		flex: 100%;
+	}
+
+}
+
 footer {
 	height: 500px;
 	width: 100%;
